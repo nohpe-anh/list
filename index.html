@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Just A Little Project</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Enter your name :) ......................................................................................... Example: Anh or Dang" title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:25%;">Name</th>
+    <th style="width:25%;">Homeroom</th>
+    <th style="width:25%;">House</th>
+    <th style="width:25%;">No. Students</th>
+  </tr>
+  <tr>
+    <td>Anderton, Tanah</td>
+    <td>11A</td>
+    <td>Rice</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Ashton, Zoe</td>
+    <td>11A</td>
+    <td>McAuley</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Boschen, Anneliese</td>
+    <td>11A</td>
+    <td>McAuley</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Buttonshaw-Benning, Arjuna</td>
+    <td>11A</td>
+    <td>Maguire</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Carlin, James</td>
+    <td>11A</td>
+    <td>Maguire</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Cozens, Sam</td>
+    <td>11A</td>
+    <td>Maguire</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Oops Can't Find Me</td>
+    <td>11A</td>
+    <td>McAuley</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Delaney, Kyle</td>
+    <td>11A</td>
+    <td>Rice</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Farley, Rachel</td>
+    <td>11A</td>
+    <td>McAuley</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Gough, Hattie</td>
+    <td>11A</td>
+    <td>Maguire</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Gurry, Liam</td>
+    <td>11A</td>
+    <td>Egan</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Hintum, Maggie</td>
+    <td>11A</td>
+    <td>Rice</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Jago, Cate</td>
+    <td>11A</td>
+    <td>Rice</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Kelly, Kylan</td>
+    <td>11A</td>
+    <td>Rice</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Killen, Stephanie </td>
+    <td>11A</td>
+    <td>Egan</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Klem, Holly </td>
+    <td>11A</td>
+    <td>Rice</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Murphy, Jack</td>
+    <td>11A</td>
+    <td>McAuley</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Petersen, Mac</td>
+    <td>11A</td>
+    <td>Egan</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Richards, Samuel</td>
+    <td>11A</td>
+    <td>Maguire</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Rivett, Ashlyn</td>
+    <td>11A</td>
+    <td>Rice</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Stevenson, India</td>
+    <td>11A</td>
+    <td>Egan</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Thompson, Marlee</td>
+    <td>11A</td>
+    <td>Maguire</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Wakely, Anna</td>
+    <td>11A</td>
+    <td>Egan</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Wollermann, Olivia</td>
+    <td>11A</td>
+    <td>Egan</td>
+    <td>24</td>
+  </tr>
+    <tr>
+    <td>Allen, Kaleb</td>
+    <td>11B</td>
+    <td>Maguire</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Baillie, Mali </td>
+    <td>11B</td>
+    <td>Rice</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Bowden, Brianna</td>
+    <td>11B</td>
+    <td>McAuley</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Carroll, Willoby</td>
+    <td>11B</td>
+    <td>Rice</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Drake, Bridgette</td>
+    <td>11B</td>
+    <td>Egan</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Dyett, James</td>
+    <td>11B</td>
+    <td>Maguire</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Fish-Laird, Ashkin</td>
+    <td>11B</td>
+    <td>Rice</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Graham, Tom</td>
+    <td>11B</td>
+    <td>Rice</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Healey, Eliza</td>
+    <td>11B</td>
+    <td>Egan</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Holley, Maddison</td>
+    <td>11B</td>
+    <td>Maguire</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Johnston, Amy</td>
+    <td>11B</td>
+    <td>McAuley</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Johnstone, Nicole</td>
+    <td>11B</td>
+    <td>Rice</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Kenna, Millie</td>
+    <td>11B</td>
+    <td>Rice</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Kermond, Harrison</td>
+    <td>11B</td>
+    <td>Egan</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Lyons, Clare</td>
+    <td>11B</td>
+    <td>Maguire</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Maher, Jonah</td>
+    <td>11B</td>
+    <td>Egan</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Morgan, Alana</td>
+    <td>11B</td>
+    <td>Maguire</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Mullins, Ruby</td>
+    <td>11B</td>
+    <td>Egan</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Neal, Elly</td>
+    <td>11B</td>
+    <td>Egan</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Noonan, Jack</td>
+    <td>11B</td>
+    <td>Egan</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Riordan, Riley</td>
+    <td>11B</td>
+    <td>McAuley</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Sinnott, Matthew</td>
+    <td>11B</td>
+    <td>McAuley</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Surkitt, Jack</td>
+    <td>11B</td>
+    <td>McAuley</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>White, Harry</td>
+    <td>11B</td>
+    <td>Egan</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Wright, Amber</td>
+    <td>11B</td>
+    <td>Maguire</td>
+    <td>25</td>
+  </tr>
+    <tr>
+    <td>Anderson, Chelsea</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Bamford, Jamie</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Barber, Archie</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Carroll, Jasmin </td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Gedye, Jessica</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Hand, Mia</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Hearn, Gabrielle</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Henderson, Georgie</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Jenkins, Stephanie</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Kenny, Grace</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>McDowall, Rhys</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>McNeil, William</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Opperman, Theo</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>O'Sullivan, Paddy</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Owen, Walker</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Pennington, Benjamin</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Rea, Maxwell</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Ritchie, Zoe</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Russell, Harvey</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Ryan, Jack</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Smith, Liam</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Stacey, Emma</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Walsh, Nellie</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Welsh, Molly</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>White, Harry</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Windahl, Chloe</td>
+    <td>11C</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+    </tr>
+    <tr>
+    <td>Austen, Olivia</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Bail, Joshua</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Baldwin, Aislin</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Beks, Sofie</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Clifford, Paris</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Collins, Elsa</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Giblin, Nicola</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Glennen, Justin</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Griffiths, Harry</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Grundy, Callum</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Gurnett, William</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Harvey, Ben</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Kelly, Olivia</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Kermond, Elle</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Mack, Sophie</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Mahony, Daniel</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>McKinnon, Axel</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>McLaren, Nelson</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Owen, William</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Promnitz, Serafina</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Ragg, Catie</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Ring, Zachary</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Sharkey, Erin</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Timms, Ned</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Trewin, Noah</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Zawadzki-Colliton, Niamh</td>
+    <td>11D</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Atkins, Malin</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>Blundell, Eliza</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+    <tr>
+    <td>Casamento, Jai</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+    <tr>
+    <td>Couch, Ella</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+    <tr>
+    <td>Evans, Ashley</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+    <tr>
+    <td>Freitag, Thomas</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+    <tr>
+    <td>Grieve, Flynn</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>Hammond,Oliver</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>Kelly, Will</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>Kent, Ashlyn</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>Lane, Luke</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>Nabong, Mark</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>Neal, Grace</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>Nyikos, Joe</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>O'Dwyer, Tannah</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>Quigley, Olivia</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>Rankin, Brooke</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>Rea, Victoria</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>Roberts, Elissa</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>Sewell, Conor</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>Sinclair, Austin</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>Stevens, Archie</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>Uebergang, Thalia</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>Walsh, Sophie</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>Williams, Jonah</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>Wolter, Jorja</td>
+    <td>11E</td>
+    <td>Updating</td>
+    <td>26</td>
+  </tr>
+  <tr>
+    <td>Baulch, Thomas</td>
+    <td>11F</td>
+    <td>Updating</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Brown, Monique</td>
+    <td>11F</td>
+    <td>Updating</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Cumming, Balun</td>
+    <td>11F</td>
+    <td>Updating</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Dobson, Patrick</td>
+    <td>11F</td>
+    <td>Updating</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>English, Millicent</td>
+    <td>11F</td>
+    <td>Updating</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Ewing, Sarah</td>
+    <td>11F</td>
+    <td>Updating</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Gagniere, Ines</td>
+    <td>11F</td>
+    <td>Updating</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Gust, Kaitlyn</td>
+    <td>11F</td>
+    <td>Updating</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Holmes, Harrison</td>
+    <td>11F</td>
+    <td>Updating</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Kelly, Liam</td>
+    <td>11F</td>
+    <td>Updating</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Kelly, Ruby</td>
+    <td>11F</td>
+    <td>Updating</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Lumsden, Max</td>
+    <td>11F</td>
+    <td>Updating</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Lynch, Georgia</td>
+    <td>11F</td>
+    <td>Updating</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Madden, Lexie</td>
+    <td>11F</td>
+    <td>Updating</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Martell, Grace</td>
+    <td>11F</td>
+    <td>Updating</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>McInerney, Paris</td>
+    <td>11F</td>
+    <td>Updating</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Noonan, Jake</td>
+    <td>11F</td>
+    <td>Updating</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Pierce, Ava</td>
+    <td>11F</td>
+    <td>Updating</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Rea, Rebecca</td>
+    <td>11F</td>
+    <td>Updating</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Rombo, Sacha</td>
+    <td>11F</td>
+    <td>Updating</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Smith, Darcy</td>
+    <td>11F</td>
+    <td>Updating</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Suckling, Isaac</td>
+    <td>11F</td>
+    <td>Updating</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>van der Aa, Jack</td>
+    <td>11F</td>
+    <td>Updating</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Wellens, Archer</td>
+    <td>11F</td>
+    <td>Updating</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Barker, Joshua</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Barlett, Kayla</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Beames, Gabrielle</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Berger, Le Lou</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Brown, Lachlan</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Campbell, William</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Clements, Matthew</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+    <tr>
+    <td>Collins, Mary</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Daffy, Chloe</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Dooley, William</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Dorney, Olivia</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Fitzsimmons, Jakub</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>James, Joshua</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Lang, Bob</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>McCosh, Jake</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>McGowan, Hannah</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>McGrath, Leo</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>McInerney, Taylah</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>McKenzie, Rachel</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Monaghan, Tori</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Neagle, Lily</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Rea, Maggie</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Wake, Indiara</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Wakefield, Obioma</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>Walker, Tahlia</td>
+    <td>11G</td>
+    <td>Updating</td>
+    <td>25</td>
+  </tr>
+
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
